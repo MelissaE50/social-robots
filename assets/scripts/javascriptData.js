@@ -29,16 +29,16 @@ const HUB_DATA = {
   ],
 
   researchQuestions:
-    "How can healthcare facilities deploy social robots in dementia palliative care in ways that preserve dignity, autonomy, and privacy while maintaining robust cybersecurity safeguards across the robotic data lifecycle?",
+    "How can healthcare facilities deploy social robots in dementia palliative care in ways that preserve dignity, autonomy, and privacy while maintaining robust cybersecurity safeguards across the robotic data lifecycle (incorporate HIPAA, GDPR, governance standards)?",
 
     
 
   scope: [
     "Focus: therapeutic/companion robots used with dementia patients in palliative care settings.",
-    "Includes both on-device and cloud-enabled robots (vendor platforms matter).",
+    "Includes both on-device and cloud-enabled robots (vendor platforms are important).",
     "Ethical lens: dignity, autonomy, consent validity, deception, and relational vulnerability.",
     "Security/privacy lens: endpoints + sensors + data lifecycle + vendor/supply chain risk.",
-    "Not a clinical efficacy trial; this site synthesizes literature and proposes safeguards."
+    "Not a clinical trial; this site proposes best practices and safeguards based on academic writings, prior studies, and current HIPAA/GDPA standards."
   ],
 
   
@@ -49,16 +49,16 @@ const HUB_DATA = {
       claim:
         "Because dementia impacts autonomy and understanding, ethical deployment requires stronger safeguards than typical consumer AI products.",
       meaning:
-        "Facilities should treat robots as care-influencing systems with dignity and vulnerability constraints—not as novelty tech.",
+        "Facilities should treat robots as care-influencing systems with dignity and vulnerability constraints—not as novelty tech. Extremely vulnerable populations are impacted.",
       tags: ["dignity", "vulnerability", "care ethics"]
     },
     {
       category: "Consent",
       title: "One-time consent is not enough for adaptive social robots",
       claim:
-        "Robots that learn preferences and store “memories” change over time, so consent must be revisited and scoped by feature.",
+        "Robots that learn preferences and store “memories” change over time, so consent must be revisited and scoped by feature. Dementia patients are still entitled to choice as their medical status progresses.",
       meaning:
-        "Use tiered permissions (memory, biometrics, cloud sharing) and periodic re-authorization. Combine proxy consent with assent/dissent monitoring.",
+        "Use tiered permissions (memory, biometrics, cloud sharing) and periodic re-authorization. Combine proxy consent with assent/dissent monitoring. Keep records of patients' reactions.",
       tags: ["dynamic consent", "tiered consent", "assent/dissent"]
     },
     {
@@ -67,7 +67,7 @@ const HUB_DATA = {
       claim:
         "Robots designed to build trust and attachment can create undue influence, especially in cognitively impaired patients.",
       meaning:
-        "Facilities should restrict deception-like design, document intended emotional techniques, and monitor for dependency or distress.",
+        "Facilities should restrict deception-like design, document intended emotional techniques, and monitor regularly for dependency or distress.",
       tags: ["deception", "manipulation", "relational ethics"]
     },
     {
@@ -83,9 +83,9 @@ const HUB_DATA = {
       category: "Security",
       title: "Robots expand the attack surface as sensor-rich endpoints",
       claim:
-        "Microphones/cameras + connectivity + cloud platforms make robots attractive targets and hard to secure if governance is weak.",
+        "Microphones/cameras, connectivity, and cloud platforms make robots attractive targets and hard to secure if governance is weak.",
       meaning:
-        "Require baseline controls: hardening, strong authentication, segmentation, patch SLAs, and centralized audit logs.",
+        "Require robust baseline controls: hardening, strong authentication, system segmentation, patch SLAs, and centralized audit logs.",
       tags: ["authentication", "patching", "segmentation", "audit logs"]
     },
     {
