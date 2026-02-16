@@ -28,8 +28,10 @@ const HUB_DATA = {
     "Control vendor access and cloud dependencies through contracts and monitoring."
   ],
 
-  researchQuestion:
+  researchQuestions:
     "How can healthcare facilities deploy social robots in dementia palliative care in ways that preserve dignity, autonomy, and privacy while maintaining robust cybersecurity safeguards across the robotic data lifecycle?",
+
+    
 
   scope: [
     "Focus: therapeutic/companion robots used with dementia patients in palliative care settings.",
@@ -39,7 +41,7 @@ const HUB_DATA = {
     "Not a clinical efficacy trial; this site synthesizes literature and proposes safeguards."
   ],
 
-  // Public-facing findings: each includes meaning/implication
+  
   findings: [
     {
       category: "Ethics",
@@ -97,7 +99,7 @@ const HUB_DATA = {
     }
   ],
 
-  // Simple risk snapshot (what you called “risk matrix” but friendly)
+  // Simple risk snapshot 
   risks: [
     { title: "Always-on sensors & over-collection", severity: "High", note: "Continuous monitoring can become normalized surveillance; minimize by default." },
     { title: "Cloud dependency & vendor access", severity: "High", note: "Offsite processing expands exposure; require strict access controls and audit rights." },
@@ -105,7 +107,7 @@ const HUB_DATA = {
     { title: "Emotional influence & deception-like interactions", severity: "High", note: "Design can shape patient behavior; monitor distress/dependency and restrict deceptive framing." }
   ],
 
-  // Safeguards: concrete, public-readable, still rigorous
+  // Safeguards surrounding consent
   safeguards: [
     {
       title: "Consent Safeguards",
@@ -159,15 +161,16 @@ const HUB_DATA = {
   ],
 
   limitations: [
-    "This site synthesizes literature and policy frameworks rather than reporting new clinical trial data.",
-    "Robot vendor implementations vary; some claims depend on what vendors disclose or allow auditors to verify.",
-    "“Emotional influence” can be hard to measure consistently and requires careful definitions."
+    "This site synthesizes academic literature and policy frameworks rather than reporting new clinical trial data.",
+    "Robot vendor implementations vary; some claims depend on what vendors disclose or allow auditors to verify. Always review SLAs.",
+    "“Emotional influence” can be hard to measure consistently, varies by patient, and requires careful consideration and definitions."
   ],
 
   futureWork: [
     "Better empirical measures of assent/dissent over long-term robot use in dementia care.",
     "Standardized baseline certification for robot logging, patching, and privacy controls in care settings.",
-    "Techniques to limit sensitive inference while preserving therapeutic personalization."
+    "Develop methods to limit how much sensitive personal information systems can infer about patients, while still preserving useful therapeutic personalization."
+
   ],
 
   coreSources: [
@@ -190,11 +193,26 @@ const HUB_DATA = {
       title: "The Alignment Problem (Brian Christian)",
       href: "#",
       note: "Conceptual framing for alignment and incentives."
-    }
+    },
+    {
+      title: "Technological Risks and Ethical Implications of Using Robots in Long-Term Care.",
+      href: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9208036/",
+      note: "Good for cybersecurity risks and ethics."
+    },
+    {
+      title: "Somebody That I Used to Know: The Risks of Personalizing Robots for Dementia Care.",
+      href: "https://robots.law.miami.edu/2021/wp-content/uploads/2021/08/Kubota-et-al-Risks-to-personalizing-robots-for-dementia.pdf",
+      note: "Risks surrounding consent and manipulation."
+    },
+     {
+      title: "Exploring Care Robots'Cybersecurity Threats From Care Robotics Specialists' Point of View.",
+      href: "https://www.researchgate.net/publication/361253300_Exploring_care_robots'_cybersecurity_threats_from_care_robotics_specialists'_point_of_view",
+      note: "Specialty review regarding cybersecurity threats in the context of care robots."
+    },
   ],
 
   bibliography: [
-    // Add APA-style entries as you go:
+    // Add APA-style entries if any citations are made in text:
     // { cite: "Author, A. A. (Year). Title. Journal, volume(issue), pages. https://doi.org/...", href: "https://..." }
   ]
 };

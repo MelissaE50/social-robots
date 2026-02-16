@@ -292,3 +292,39 @@ input[type="search"]:focus{
   .grid-2{ grid-template-columns: 1fr; }
   .risk-grid{ grid-template-columns: 1fr; }
 }
+.content-image {
+  width: 100%;
+  max-width: 480px; 
+  height: auto;
+  display: block;
+  margin: 16px auto 24px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+.content-image-small {
+  width: 100%;
+  max-width: 300px;   /* small, intimate */
+  height: auto;
+  display: block;
+  margin: 12px auto 20px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+.figure {
+  margin: 0;
+  text-align: center;
+}
+
+.figure-caption {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  opacity: 0.8;
+  line-height: 1.4;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
