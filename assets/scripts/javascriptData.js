@@ -14,7 +14,8 @@ const HUB_DATA = {
     "Assent/Dissent: nonverbal or behavioral willingness/refusal that still matters ethically.",
     "Dynamic consent: consent revisited over time as features and patient capacity change.",
     "Privacy-by-design: minimizing data and risk as a default, not as an add-on.",
-    "Inference: when systems deduce sensitive traits (mood/cognition) from behavior data."
+    "Inference: when systems deduce sensitive traits (mood/cognition) from behavior data",
+    "SLA (Service Level Agreement): A contract that defines the minimum level of service a vendor must provide such as uptime, support response times, and how quickly security issues must be fixed."
   ],
 
   coreClaim:
