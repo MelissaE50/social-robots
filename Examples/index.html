@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ethics, Security & Privacy of Social Robots in Dementia Palliative Care</title>
+  <meta name="description" content="Research hub for an independent study on ethics, security, and privacy of social robots in dementia palliative care." />
+
+  <link rel="stylesheet" href="assets/style/stylesheet.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-grid">
+      <div>
+        <p class="kicker">Independent Study • Spring 2026</p>
+        <h1 class="title">Ethics, Security & Privacy of Social Robots in Dementia Palliative Care</h1>
+        <p class="subtitle">
+          A living research notebook: readings, frameworks, consent models, cybersecurity & privacy risks, and artifacts.
+        </p>
+      </div>
+
+      <div class="card header-card">
+        <div class="meta">
+          <div><span class="label">Student</span><span class="value">Melissa Ecker</span></div>
+          <div><span class="label">Mentor</span><span class="value">Thomas Wallace</span></div>
+          <div><span class="label">Updated</span><span class="value" id="lastUpdated">—</span></div>
+        </div>
+        <div class="header-actions">
+          <button class="btn" id="toggleTheme" type="button" aria-label="Toggle theme">Toggle theme</button>
+          <a class="btn btn-outline" href="#bibliography">Jump to Bibliography</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<nav class="site-nav" aria-label="Primary">
+  <div class="container nav-row">
+    <a class="nav-link" href="#executive-summary">Summary</a>
+    <a class="nav-link" href="#problem">The Problem</a>
+    <a class="nav-link" href="#findings">Key Findings</a>
+    <a class="nav-link" href="#risk-snapshot">Risk Snapshot</a>
+    <a class="nav-link" href="#safeguards">Safeguards</a>
+    <a class="nav-link" href="#implementation">Implementation</a>
+    <a class="nav-link" href="#limitations">Limitations</a>
+    <a class="nav-link" href="#bibliography">Sources</a>
+  </div>
+</nav>
+
+<main id="main" class="container main-grid">
+  <aside class="sidebar" aria-label="Sidebar tools">
+    <section class="card">
+      <h2 class="h3">Search</h2>
+      <label class="field">
+        <span class="field-label">Search findings & sources</span>
+        <input id="searchInput" type="search" placeholder="e.g., deception, assent, audit logs, data minimization..." />
+      </label>
+      <p class="hint">Filters Key Findings, Safeguards, and Sources.</p>
+    </section>
+
+    <section class="card">
+      <h2 class="h3">What this site delivers</h2>
+      <ul class="status" id="deliverables"></ul>
+    </section>
+
+    <section class="card">
+      <h2 class="h3">Quick Definitions</h2>
+      <ul class="status" id="definitions"></ul>
+      <p class="hint">Keep this short and plain-language.</p>
+    </section>
+  </aside>
+
+  <section class="content">
+    <section id="executive-summary" class="section">
+      <div class="section-head">
+        <h2>Summary</h2>
+        <p class="muted">A public-facing synthesis of ethical, consent, cybersecurity, and privacy safeguards for robot-assisted dementia palliative care.</p>
+      </div>
+
+      <div class="grid-2">
+        <article class="card">
+          <h3 class="h3">Core Claim</h3>
+          <p id="coreClaim"></p>
+        </article>
+
+        <article class="card">
+          <h3 class="h3">What I recommend (high-level)</h3>
+          <ul class="list" id="topRecommendations"></ul>
+        </article>
+      </div>
+    </section>
+    <p class="muted">
+  <strong>Audience:</strong> This site is written for healthcare professionals, caregivers, administrators, policymakers, and families seeking to understand the ethical, privacy, and security implications of social robots in dementia palliative care.
+</p>
+<p class="muted">
+  <strong>Purpose:</strong> This site provides a clear, evidence-based guide to the ethical, privacy, and security considerations involved in deploying social robots in dementia palliative care, with practical recommendations for responsible, patient-centered use.
+</p>
+
+
+    <section id="problem" class="section">
+      <div class="section-head">
+        <h2>The Problem</h2>
+        <p class="muted">Why social robots in dementia care create unique ethical and security concerns.</p>
+      </div>
+
+      <div class="grid-2">
+        <article class="card">
+          <h3 class="h3">Research Question</h3>
+          <p id="researchQuestion"></p>
+        </article>
+
+        <article class="card">
+          <h3 class="h3">Scope</h3>
+          <ul class="list" id="scope"></ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="findings" class="section">
+      <div class="section-head">
+        <h2>Key Findings</h2>
+        <p class="muted">Clear claims with practical implications. Each finding includes “what it means” for facilities and families.</p>
+      </div>
+
+      <div class="grid-2" id="findingCards"></div>
+    </section>
+
+    <section id="risk-snapshot" class="section">
+      <div class="section-head">
+        <h2>Risk Snapshot</h2>
+        <p class="muted">A simplified view of the most important risk areas—without turning this into a spreadsheet.</p>
+      </div>
+
+      <article class="card">
+        <h3 class="h3">Top risks to manage</h3>
+        <div class="risk-grid" id="riskGrid"></div>
+        <p class="hint">This is a communication-friendly summary; details can live in an appendix later if you want.</p>
+      </article>
+    </section>
+
+    <section id="safeguards" class="section">
+      <div class="section-head">
+        <h2>Safeguards</h2>
+        <p class="muted">Concrete controls that reduce harm: consent practices, privacy-by-design defaults, and security requirements.</p>
+      </div>
+
+      <div class="grid-2" id="safeguardCards"></div>
+    </section>
+
+    <section id="implementation" class="section">
+      <div class="section-head">
+        <h2>Implementation</h2>
+        <p class="muted">How a facility can operationalize safeguards from procurement through ongoing monitoring.</p>
+      </div>
+
+      <article class="card">
+        <h3 class="h3">Lifecycle Playbook</h3>
+        <ol class="objectives" id="playbook"></ol>
+      </article>
+    </section>
+
+    <section id="limitations" class="section">
+      <div class="section-head">
+        <h2>Limitations & Future Work</h2>
+        <p class="muted">What remains uncertain and what should be studied next.</p>
+      </div>
+
+      <div class="grid-2">
+        <article class="card">
+          <h3 class="h3">Limitations</h3>
+          <ul class="list" id="limitationsList"></ul>
+        </article>
+
+        <article class="card">
+          <h3 class="h3">Future Work</h3>
+          <ul class="list" id="futureWork"></ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="bibliography" class="section">
+      <div class="section-head">
+        <h2>Sources</h2>
+        <p class="muted">Core readings and an expanding bibliography list.</p>
+      </div>
+
+      <div class="grid-2">
+        <article class="card">
+          <div class="row-between">
+            <h3 class="h3">Core Readings</h3>
+            <span class="pill" id="readingCount">0</span>
+          </div>
+          <ul class="refs" id="readingList"></ul>
+        </article>
+
+        <article class="card">
+          <div class="row-between">
+            <h3 class="h3">Bibliography</h3>
+            <span class="pill" id="biblioCount">0</span>
+          </div>
+          <ul class="refs" id="biblioList"></ul>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Melissa Ecker</p>
+        
+    </footer>
+    </section>
+  </main>
+  
+  <script src="assets/scripts/javascriptData.js"></script>
+  <script src="assets/scripts/javascriptData.js"></script>
+  
+</body>
+</html>
+
+
+      
