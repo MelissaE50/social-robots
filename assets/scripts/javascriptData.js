@@ -28,8 +28,12 @@ const HUB_DATA = {
     "Control vendor access and cloud dependencies through contracts and monitoring."
   ],
 
-  researchQuestions:
-    "How can healthcare facilities deploy social robots in dementia palliative care in ways that preserve dignity, autonomy, and privacy while maintaining robust cybersecurity safeguards across the robotic data lifecycle (incorporate HIPAA, GDPR, governance standards)?",
+  researchQuestions: [
+    "How can healthcare facilities deploy social robots in dementia palliative care in ways that preserve dignity, autonomy, and privacy while maintaining robust cybersecurity safeguards across the robotic data lifecycle (incorporate HIPAA, GDPR, governance standards)?"
+
+     /*"Is it ethical to allow soft manipulation for patient compliance purposes if it benefits the health of the patient?"*/
+
+     ],
 
     
 
