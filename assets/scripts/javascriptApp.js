@@ -167,7 +167,7 @@
     setText("lastUpdated", formatDate(d.lastUpdatedISO));
 
     setText("coreClaim", d.coreClaim);
-    setText("researchQuestions", d.researchQuestions);
+    renderList($("researchQuestions"), d.researchQuestions, li);
 
     renderList($("deliverables"), d.deliverables, li);
     renderList($("definitions"), d.definitions, li);

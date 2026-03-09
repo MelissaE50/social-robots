@@ -29,9 +29,9 @@ const HUB_DATA = {
   ],
 
   researchQuestions: [
-    "How can healthcare facilities deploy social robots in dementia palliative care in ways that preserve dignity, autonomy, and privacy while maintaining robust cybersecurity safeguards across the robotic data lifecycle (incorporate HIPAA, GDPR, governance standards)?"
+    "How can healthcare facilities deploy social robots in dementia palliative care in ways that preserve dignity, autonomy, and privacy while maintaining robust cybersecurity safeguards across the robotic data lifecycle (incorporate HIPAA, GDPR, governance standards)?",
 
-     /*"Is it ethical to allow soft manipulation for patient compliance purposes if it benefits the health of the patient?"*/
+     "Is it ethical to allow soft manipulation for patient compliance purposes if it benefits the health of the patient?"
 
      ],
 
