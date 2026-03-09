@@ -41,7 +41,7 @@ const HUB_DATA = {
     "Focus: therapeutic/companion robots used with dementia patients in palliative care settings.",
     "Includes both on-device and cloud-enabled robots (vendor platforms are important).",
     "Ethical lens: dignity, autonomy, consent validity, deception, and relational vulnerability.",
-    "Security/privacy lens: endpoints + sensors + data lifecycle + vendor/supply chain risk.",
+    "Security/privacy lens: endpoints + sensors + data lifecycle + vendor.",
     "Not a clinical trial; this site proposes best practices and safeguards based on academic writings, prior studies, and current HIPAA/GDPA standards."
   ],
 
