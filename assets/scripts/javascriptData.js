@@ -22,7 +22,7 @@ const HUB_DATA = {
     "Therapeutic social robots can reduce loneliness and support routines in dementia palliative care, but they also introduce risks tied to vulnerability: consent is often fragile, emotional influence can become manipulative, and continuous data collection expands privacy and cybersecurity exposure. Safe deployment requires consent safeguards, privacy-by-design defaults, and auditable security controls.",
 
   topRecommendations: [
-    "Use proxy consent plus ongoing checks—and treat patient dissent as a stop signal.",
+    "Use proxy consent plus ongoing checks; always treat patient dissent as a stop signal.",
     "Minimize data by default: avoid always-on recording and limit retention.",
     "Require security basics: strong authentication, patching, network segmentation, and logging.",
     "Control vendor access and cloud dependencies through contracts and monitoring."
@@ -30,7 +30,6 @@ const HUB_DATA = {
 
   researchQuestions: [
     "How can healthcare facilities deploy social robots in dementia palliative care in ways that preserve dignity, autonomy, and privacy while maintaining robust cybersecurity safeguards across the robotic data lifecycle (incorporate HIPAA, GDPR, governance standards)?",
-
      "Is it ethical to allow soft manipulation for patient compliance purposes if it benefits the health of the patient?"
 
      ],
@@ -157,11 +156,11 @@ const HUB_DATA = {
 
   playbook: [
     "Procurement: define care goals, require consent/privacy/security safeguards, demand data-flow documentation and patch SLAs.",
-    "Configuration: disable unnecessary sensors/features, set retention limits, configure access controls before go-live.",
+    "Configuration: disable unnecessary sensors/features, set retention limits, configure access controls before going live.",
     "Deployment: segment network, verify encryption and logging, train staff on assent/dissent escalation.",
-    "Operations: review logs, monitor vendor access, reassess consent and patient responses, periodically re-evaluate features.",
-    "Incident response: isolate device, preserve logs, notify per policy, assess patient impact and remediate.",
-    "Retirement: revoke access, securely wipe/decommission, verify deletion, document lessons learned."
+    "Operations: review logs, monitor vendor access, reassess consent and patient responses, periodically reevaluate features.",
+    "Incident response: isolate device, preserve logs, notify per policy, assess patient impact and remediate immediately.",
+    "Retirement: revoke access, securely wipe PI data/decommission patient portal, verify deletion, document findings and lessons learned."
   ],
 
   limitations: [
